@@ -1,5 +1,5 @@
 # Wengan demo
-This repository contains a test dataset and the instructions to test [Wengan](https://github.com/adigenova/wengan) (version 0.1).
+This repository contains a test dataset and the instructions to run [Wengan](https://github.com/adigenova/wengan) (version 0.1).
 
 Table of Contents
 =================
@@ -15,11 +15,11 @@ Table of Contents
        * [Running WenganA](#running-wengana)
        * [Running WenganM](#running-wenganm)
 
-* [Running human assemblies](#running-human-assemblies)
+* [Assembing human genomes](#assembing-human-genomes)
 
 
 ## Download the Wengan code
-This test use the precompiled binnaries of the wengan v0.1, the binaries can be donwloaded with the following command:
+This test use precompiled binaries of Wengan (v0.1). The Linux precompiled binaries can be downloaded using the following command:
 
 ```
 wget https://github.com/adigenova/wengan/releases/download/0.1/wengan-v0.1-bin-Linux.tar.gz
@@ -97,5 +97,5 @@ The fasta file *.SPolished.asm.wengan.fasta (ec\_Wm\_or1.SPolished.asm.wengan.fa
 ##### Computational resource
 The expected runtime with a single core is about 10 minutes and with 10 cores about 2 Minutes. The maximum RAM usage is around ~3 Gb.
 
-## Running human assemblies
+## Assembing human genomes
 The [supplementary material](https://www.biorxiv.org/content/biorxiv/early/2019/11/25/840447/DC1/embed/media-1.pdf?download=true) of the [Wengan BioRxiv preprint](https://www.biorxiv.org/content/10.1101/840447v1) describes the datasets and commands used to assemble four human genomes with Wengan.
