@@ -42,7 +42,7 @@ perl ${WG} -x pacraw -a D -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R
 ```
 
 ##### Expected results 
-The fasta file *.SPolished.asm.wengan.fasta ( ec\_Wd\_or1.SPolished.asm.wengan.fasta and  ec\_Wd\_pr1.SPolished.asm.wengan.fasta respectively) contains the final genome assembly reported by Wengan. Both hybrid datasets are assembled to a single contig sequence (Genome Size of ~4.6 Mb).
+The fasta file *.SPolished.asm.wengan.fasta (ec\_Wd\_or1.SPolished.asm.wengan.fasta and  ec\_Wd\_pr1.SPolished.asm.wengan.fasta respectively) contains the final genome assembly reported by Wengan. Both hybrid datasets are assembled to a single contig sequence (Genome Size of ~4.6 Mb).
 
 ##### Computational resource
 The expected runtime with a single core is about 10 minutes and with 10 cores about 2 Minutes. The maximum RAM usage is around ~9 Gb.
@@ -59,7 +59,7 @@ perl ${WG} -x pacraw -a A -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R
 ```
 
 ##### Expected results 
-The fasta file *.SPolished.asm.wengan.fasta ( ec\_Wa\_or1.SPolished.asm.wengan.fasta and  ec\_Wa\_pr1.SPolished.asm.wengan.fasta respectively) contains the final genome assembly reported by Wengan. Both hybrid datasets are assembled to a single contig sequence (Genome Size of ~4.6 Mb).
+The fasta file *.SPolished.asm.wengan.fasta (ec\_Wa\_or1.SPolished.asm.wengan.fasta and  ec\_Wa\_pr1.SPolished.asm.wengan.fasta respectively) contains the final genome assembly reported by Wengan. Both hybrid datasets are assembled to a single contig sequence (Genome Size of ~4.6 Mb).
 
 ##### Computational resource
 The expected runtime with a single core is about 10 minutes and with 10 cores about 2 Minutes. The maximum RAM usage is around ~4 Gb.
@@ -76,7 +76,7 @@ perl ${WG} -x pacraw -a M -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R
 ```
 
 ##### Expected results 
-The fasta file *.SPolished.asm.wengan.fasta ( ec\_Wm\_or1.SPolished.asm.wengan.fasta and  ec\_Wm\_pr1.SPolished.asm.wengan.fasta respectively) contains the final genome assembly reported by Wengan. Both hybrid datasets are assembled to a single contig sequence (Genome Size of ~4.6 Mb).
+The fasta file *.SPolished.asm.wengan.fasta (ec\_Wm\_or1.SPolished.asm.wengan.fasta and  ec\_Wm\_pr1.SPolished.asm.wengan.fasta respectively) contains the final genome assembly reported by Wengan. Both hybrid datasets are assembled to a single contig sequence (Genome Size of ~4.6 Mb).
 
 ##### Computational resource
 The expected runtime with a single core is about 10 minutes and with 10 cores about 2 Minutes. The maximum RAM usage is around ~3 Gb.
