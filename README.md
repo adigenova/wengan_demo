@@ -1,6 +1,22 @@
 # Wengan demo
 This repository contains a test dataset and the instructions to test [Wengan](https://github.com/adigenova/wengan) (version 0.1).
 
+Table of Contents
+=================
+
+* [Download the Wengan code](#download-the-wengan-code)
+
+* [Runnig the E.coli demo](#runnig-the-ecoli-demo)
+    * [Dataset](#dataset)
+    * [Hardware used](#hardware-used)
+    * [Wengan commands](#wengan-commands)
+
+    	* [Running WenganD](#running-wengand)
+       * [Running WenganA](#running-wengana)
+       * [Running WenganM](#running-wenganm)
+
+* [Running human assemblies](#running-human-assemblies)
+
 
 ## Download the Wengan code
 This test use the precompiled binnaries of the wengan v0.1, the binaries can be donwloaded with the following command:
@@ -50,7 +66,7 @@ The expected runtime with a single core is about 10 minutes and with 10 cores ab
 #### Running WenganA
 
 ```
-#WG should points to wengan.pl script (found in root installation directory)
+#WG should point to wengan.pl script (found in the root installation directory)
 WG=$PATH_TO/wengan-v0.1-bin-Linux/wengan.pl
 # Assembling Illumina + Nanopore reads
 perl ${WG} -x ontraw -a A -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R2.fastq.gz -l ecoli/reads/EC.ONT.30X.fa.gz -p ec_Wa_or1 -t 10 -g 5
@@ -67,7 +83,7 @@ The expected runtime with a single core is about 10 minutes and with 10 cores ab
 #### Running WenganM
 
 ```
-#WG should points to wengan.pl script (found in root installation directory)
+#WG should point to wengan.pl script (found in the root installation directory)
 WG=$PATH_TO/wengan-v0.1-bin-Linux/wengan.pl
 # Assembling Illumina + Nanopore reads
 perl ${WG} -x ontraw -a M -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R2.fastq.gz -l ecoli/reads/EC.ONT.30X.fa.gz -p ec_Wm_or1 -t 10 -g 5
@@ -81,4 +97,5 @@ The fasta file *.SPolished.asm.wengan.fasta (ec\_Wm\_or1.SPolished.asm.wengan.fa
 ##### Computational resource
 The expected runtime with a single core is about 10 minutes and with 10 cores about 2 Minutes. The maximum RAM usage is around ~3 Gb.
 
-
+## Running human assemblies
+The [supplementary material](https://www.biorxiv.org/content/biorxiv/early/2019/11/25/840447/DC1/embed/media-1.pdf?download=true) of the [Wengan BioRxiv preprint](https://www.biorxiv.org/content/10.1101/840447v1) describes the datasets and commands used to assemble four human genomes with Wengan.
