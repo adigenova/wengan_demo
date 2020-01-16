@@ -7,7 +7,7 @@ Table of Contents
 * [Download the Wengan code](#download-the-wengan-code)
 
 * [Running the E.coli demo](#running-the-ecoli-demo)
-    * [Dataset](#dataset)
+    * [Dataset description](#dataset-description)
     * [Hardware used](#hardware-used)
     * [Wengan commands](#wengan-commands)
 
