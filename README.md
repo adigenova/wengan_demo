@@ -31,8 +31,15 @@ export WG=$PWD/wengan-v0.1-bin-Linux/wengan.pl
 ## Running the E.coli demo
 
 
-### Dataset
-The E.coli test sequencing data was collected from public repositories.
+### Dataset description
+
+| Technology |# of reads | Genome coverage | Description |   Files   |  Source |  
+|:-:|:-:|:-:|:-:|:-:| :-: |
+|     Illumina    |  415,598 |      50     | 2 x 300 bp | EC.50X.R1.fastq.gz EC.50X.R2.fastq.gz | [Schatz Lab](http://labshare.cshl.edu/shares/schatzlab/www-data/nanocorr/2015.07.07/)|
+|     Nanopore    |   3,116  |      30     |  N50: 46kb | EC.ONT.30X.fa.gz | [Loman lab](https://s3.climb.ac.uk/nanopore/E_coli_K12_1D_R9.2_SpotON_2.pass.fasta)|
+|      PacBio     |   9,369  |      30     |  N50: 17kb | EC.PAC.30X.fa.gz | [PacBio website](https://github.com/PacificBiosciences/DevNet/wiki/E.-coli-Bacterial-Assembly)|
+
+***The original datasets are available at the listed sources. We subsampled the original files to the listed genome coverage.***
 
 ### Hardware used
 This test was run in a node of the cluster leftraru [(NLHPC Chile)](http://www.nlhpc.cl/en/). The node has the following hardware and software: 
