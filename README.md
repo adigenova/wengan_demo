@@ -1,5 +1,5 @@
 # Wengan demo
-This repository contains a test dataset and the instructions to run [Wengan](https://github.com/adigenova/wengan) (version 0.1).
+This repository contains a test dataset and the instructions to run [Wengan](https://github.com/adigenova/wengan) (version 0.2).
 
 Table of Contents
 =================
@@ -19,13 +19,13 @@ Table of Contents
 
 
 ## Download the Wengan code
-This test uses the precompiled binaries of Wengan (v0.1). The Linux precompiled binaries can be downloaded using the following command:
+This test uses the precompiled binaries of Wengan (v0.2). The Linux precompiled binaries can be downloaded using the following command:
 
 ```
-wget https://github.com/adigenova/wengan/releases/download/0.1/wengan-v0.1-bin-Linux.tar.gz
-tar zxvf wengan-v0.1-bin-Linux.tar.gz
+wget https://github.com/adigenova/wengan/releases/download/v0.2/wengan-v0.2-bin-Linux.tar.gz
+tar zxvf wengan-v0.2-bin-Linux.tar.gz
 # set WG to 
-export WG=$PWD/wengan-v0.1-bin-Linux/wengan.pl
+export WG=$PWD/wengan-v0.2-bin-Linux/wengan.pl
 ```
 
 ## Running the E.coli demo
@@ -57,7 +57,7 @@ This test was run in a node of the cluster leftraru [(NLHPC Chile)](http://www.n
 
 ```
 #WG should point to wengan.pl script (found in the root installation directory)
-WG=$PATH_TO/wengan-v0.1-bin-Linux/wengan.pl
+WG=$PATH_TO/wengan-v0.2-bin-Linux/wengan.pl
 # Assembling Illumina + Nanopore reads
 perl ${WG} -x ontraw -a D -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R2.fastq.gz -l ecoli/reads/EC.ONT.30X.fa.gz -p ec_Wd_or1 -t 10 -g 5
 # Assembling Illumina + PacBio (CLR) reads
@@ -74,7 +74,7 @@ The expected runtime with a single core is about 10 minutes and with 10 cores ab
 
 ```
 #WG should point to wengan.pl script (found in the root installation directory)
-WG=$PATH_TO/wengan-v0.1-bin-Linux/wengan.pl
+WG=$PATH_TO/wengan-v0.2-bin-Linux/wengan.pl
 # Assembling Illumina + Nanopore reads
 perl ${WG} -x ontraw -a A -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R2.fastq.gz -l ecoli/reads/EC.ONT.30X.fa.gz -p ec_Wa_or1 -t 10 -g 5
 # Assembling Illumina + PacBio (CLR) reads
@@ -91,7 +91,7 @@ The expected runtime with a single core is about 10 minutes and with 10 cores ab
 
 ```
 #WG should point to wengan.pl script (found in the root installation directory)
-WG=$PATH_TO/wengan-v0.1-bin-Linux/wengan.pl
+WG=$PATH_TO/wengan-v0.2-bin-Linux/wengan.pl
 # Assembling Illumina + Nanopore reads
 perl ${WG} -x ontraw -a M -s ecoli/reads/EC.50X.R1.fastq.gz,ecoli/reads/EC.50X.R2.fastq.gz -l ecoli/reads/EC.ONT.30X.fa.gz -p ec_Wm_or1 -t 10 -g 5
 # Assembling Illumina + PacBio (CLR) reads
